@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Crypto Price Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Crypto Price Tracker is a React application built with TypeScript that allows users to track the prices of Bitcoin (BTC) and Ethereum (ETH) using the Coinbase public API. The app includes a button to refresh the prices and displays them in real-time.
 
-In the project directory, you can run:
+### Prerequisites
 
-### `npm start`
+Before running the application, ensure you have the following installed:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Node.js and npm (Node Package Manager)
+- Git (optional, for cloning the repository)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Getting Started
 
-### `npm test`
+To get started with the Crypto Price Tracker app, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository to your local machine using Git (or download the ZIP file and extract it):
 
-### `npm run build`
+```bash
+git clone https://github.com/stoleru/forta-worktest.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd forta-worktest
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies using npm:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Running the App
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once the dependencies are installed, you can run the app locally. Use the following command:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This will start the development server and open the app in your default web browser. If it doesn't open automatically, you can access it at http://localhost:3000.
 
-## Learn More
+#### Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Upon launching the app, you will see the current prices of Bitcoin and Ethereum fetched from the Coinbase public API.
+- To refresh the prices, simply click the "Refresh Prices" button.
+- The prices will update in real-time based on the latest data from the Coinbase API.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### Testing
+
+The Crypto Price Tracker app includes unit tests to ensure the correctness of its functionality. You can run the tests using the following command:
+
+```bash
+npm test
+```
+
+This will execute the test suite and provide feedback on the app's behavior.
+
+#### Built With
+
+- React - JavaScript library for building user interfaces
+- TypeScript - Typed superset of JavaScript
+- Axios - Promise-based HTTP client for making API requests
+- Jest - JavaScript testing framework
+- React Testing Library - Testing utilities for React components
